@@ -50,9 +50,9 @@ class Mail extends PHPMailer
         $this->From = $this->frommail;
         $this->FromName = $this->fromname;
         $this->AddAddress("max@swhub.io", "MS");
-/*        $this->AddCC("cea@pickcenter.com", "LC");
+        $this->AddCC("cea@pickcenter.com", "LC");
         $this->AddCC("bucci@pickcenter.com", "MB");
-        $this->AddCC("roberta@pickcenter.com", "RG");*/
+        $this->AddCC("roberta@pickcenter.com", "RG");
         $this->AddReplyTo("info@pickcenter.com", "Informazioni");
         $this->Subject = $subject;
         $this->Body    = $body;
