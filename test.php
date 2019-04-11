@@ -6,4 +6,4 @@
  * Time: 15:08
  */
 
-phpinfo();
+include "tech/connect.php";

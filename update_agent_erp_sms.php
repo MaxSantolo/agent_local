@@ -7,28 +7,65 @@
  */
 
 include "tech/connect.php";
+require_once $_SERVER['DOCUMENT_ROOT']."/tech/class/PHPMailerAutoload.php";
+require_once $_SERVER['DOCUMENT_ROOT']."/tech/classes/Mail.php";
+require_once $_SERVER['DOCUMENT_ROOT']."/tech/classes/Log.php";
+require_once $_SERVER['DOCUMENT_ROOT']."/tech/classes/PickLog.php";
 
-//$check_array = $conn->query("SELECT * FROM sms_subs"); //prendo i dati dall'agent
+$mail = new Mail();
+$plog = new PickLog();
 
-$check_array = $conn_crm->query("SELECT * FROM email_lead_sendinblue");
+$errormsg = "";
+$msg = "";
 
-while ($row = $check_array->fetch_assoc()) {
+$sqlEmailLeadSB = "SELECT * FROM email_lead_sendinblue";
+$check_array = $conn_crm->query($sqlEmailLeadSB);
 
-    //$sms2check = preg_replace("/[^0-9]/","",substr($row['sendinblue'],2,strlen($row['sendinblue'])));
+if ($conn_crm->error) $errormsg = "Impossibile eseguire la query: " . $sqlEmailLeadSB . " - Errore: " . $conn_crm->error . PHP_EOL;
+else {
 
-    $sms2check = preg_replace("/[^0-9]/","",substr($row['sendinblue'],0,strlen($row['sendinblue'])));
+    while ($row = $check_array->fetch_assoc()) {
+
+    $sms2check = preg_replace("/[^0-9]/", "", substr($row['sendinblue'], 0, strlen($row['sendinblue'])));
+
+    $sqlExists = "SELECT * FROM sms_subs WHERE SMS = '39" . $sms2check . "'";
+    $esiste = $conn->query($sqlExists);
+
+    if ($conn->error) $errormsg .= "Impossibile eseguire la query: " . $sqlExists . " - Errore: " . $conn->error . PHP_EOL;
+
+    else {
+
+        if ($esiste->num_rows == 0) {
+
+            $sqlInsertSMSSub = "INSERT INTO sms_subs (email, nome, cognome, sms, to_add, origine, data_aggiunta) VALUES ('" . $row['email_address'] . "','" . $row['first_name'] . "','" . $row['last_name'] . "','39" . $row['sendinblue'] . "','1','CONTRATTO','" . date("Y-m-d") . "')";
+            $conn->query($sqlInsertSMSSub);
+
+            if ($conn->error) $errormsg .= "Impossibile eseguire la query: " . $sqlInsertSMSSub . " - Errore: " . $conn->error . PHP_EOL;
+            // else $msg .= $sqlInsertSMSSub . PHP_EOL;  //log troppo lungo
+
+        } else {
+            $sqlUpdateSMSSub = "UPDATE sms_subs SET to_add = '0' WHERE SMS = '39" . $sms2check . "'";
+            $conn->query($sqlUpdateSMSSub);
+
+            if ($conn->error) $errormsg .= "Impossibile eseguire la query: " . $sqlUpdateSMSSub . " - Errore: " . $conn->error . PHP_EOL;
+            //else $msg .= $sqlUpdateSMSSub . PHP_EOL;  //log troppo lungo
+        }
+    }
+}
+}
+$msg = "Inseriti / Aggiornati {$esiste->num_rows} numeri di telefono dal CRM a SendinBlue.";
 
 
+if ($errormsg == "") {
 
-    $esiste = $conn->query("SELECT * FROM sms_subs WHERE SMS = '39".$sms2check."'");
+    Log::wLog("Numeri SMS aggiornati correttamente online per SendinBlue.");
+    $plog->sendLog(array("app"=>"AGENT","content"=>$msg,"action"=>"CELLULARI_SENDINBLUE"));
 
-    if ($esiste->num_rows == 0) {
+} else {
 
-    $conn->query("INSERT INTO sms_subs (email, nome, cognome, sms, to_add, origine, data_aggiunta) VALUES ('".$row['email_address']."','".$row['first_name']."','".$row['last_name']."','39".$row['sendinblue']."','1','CONTRATTO','".date("Y-m-d")."')");
-
-    } else { $conn->query("UPDATE sms_subs SET to_add = '0' WHERE SMS = '39".$sms2check."'"); }
-
-
+    $smail = $mail->sendErrorEmail($errormsg,"AZN: CELLULARI_SENDINBLUE");
+    Log::wLog($errormsg);
+    $plog->sendLog(array("app"=>"AGENT","content"=>$errormsg,"action"=>"CELLULARI_SENDINBLUE"));
 }
 
 
