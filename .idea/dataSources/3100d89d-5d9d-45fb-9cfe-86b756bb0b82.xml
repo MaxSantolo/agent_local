@@ -19913,77 +19913,81 @@ user_id</ColNames>
       <Position>5</Position>
       <DataType>varchar(100)|0s</DataType>
     </column>
-    <column id="4130" parent="419" name="sendinblue">
+    <column id="4130" parent="419" name="primario">
       <Position>6</Position>
+      <DataType>tinyint(1)|0s</DataType>
+    </column>
+    <column id="4131" parent="419" name="cellulare_notifiche_c">
+      <Position>7</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="4131" parent="420" name="id">
+    <column id="4132" parent="420" name="id">
       <Position>1</Position>
       <DataType>char(36)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4132" parent="420" name="name">
+    <column id="4133" parent="420" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="4133" parent="420" name="date_entered">
+    <column id="4134" parent="420" name="date_entered">
       <Position>3</Position>
       <DataType>datetime|0s</DataType>
     </column>
-    <column id="4134" parent="420" name="date_modified">
+    <column id="4135" parent="420" name="date_modified">
       <Position>4</Position>
       <DataType>datetime|0s</DataType>
     </column>
-    <column id="4135" parent="420" name="modified_user_id">
+    <column id="4136" parent="420" name="modified_user_id">
       <Position>5</Position>
       <DataType>char(36)|0s</DataType>
     </column>
-    <column id="4136" parent="420" name="created_by">
+    <column id="4137" parent="420" name="created_by">
       <Position>6</Position>
       <DataType>char(36)|0s</DataType>
     </column>
-    <column id="4137" parent="420" name="description">
+    <column id="4138" parent="420" name="description">
       <Position>7</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="4138" parent="420" name="deleted">
+    <column id="4139" parent="420" name="deleted">
       <Position>8</Position>
       <DataType>tinyint(4)|0s</DataType>
     </column>
-    <column id="4139" parent="420" name="assigned_user_id">
+    <column id="4140" parent="420" name="assigned_user_id">
       <Position>9</Position>
       <DataType>char(36)|0s</DataType>
     </column>
-    <column id="4140" parent="420" name="lead_id_c">
+    <column id="4141" parent="420" name="lead_id_c">
       <Position>10</Position>
       <DataType>char(36)|0s</DataType>
     </column>
-    <column id="4141" parent="420" name="centro_scelto">
+    <column id="4142" parent="420" name="centro_scelto">
       <Position>11</Position>
       <DataType>varchar(100)|0s</DataType>
     </column>
-    <column id="4142" parent="420" name="servizio_scelto">
+    <column id="4143" parent="420" name="servizio_scelto">
       <Position>12</Position>
       <DataType>varchar(100)|0s</DataType>
     </column>
-    <column id="4143" parent="420" name="num_uffici">
+    <column id="4144" parent="420" name="num_uffici">
       <Position>13</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <column id="4144" parent="420" name="num_postazioni">
+    <column id="4145" parent="420" name="num_postazioni">
       <Position>14</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <column id="4145" parent="420" name="accountid">
+    <column id="4146" parent="420" name="accountid">
       <Position>15</Position>
       <DataType>varchar(36)|0s</DataType>
     </column>
-    <column id="4146" parent="421" name="v_note">
+    <column id="4147" parent="421" name="v_note">
       <Position>1</Position>
       <DataType>char(36)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4147" parent="421" name="v_lead_id">
+    <column id="4148" parent="421" name="v_lead_id">
       <Position>2</Position>
       <DataType>varchar(36)|0s</DataType>
     </column>

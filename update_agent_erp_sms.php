@@ -37,7 +37,8 @@ else {
 
         if ($esiste->num_rows == 0) {
 
-            $sqlInsertSMSSub = "INSERT INTO sms_subs (email, nome, cognome, sms, to_add, origine, data_aggiunta) VALUES ('" . $row['email_address'] . "','" . $row['first_name'] . "','" . $row['last_name'] . "','39" . $row['sendinblue'] . "','1','CONTRATTO','" . date("Y-m-d") . "')";
+            $now = (new DateTime("Europe/Rome"))->format('Y-m-d');
+            $sqlInsertSMSSub = "INSERT INTO sms_subs (email, nome, cognome, sms, to_add, origine, data_aggiunta) VALUES ('" . $row['email_address'] . "','" . $row['first_name'] . "','" . $row['last_name'] . "','39" . $row['sendinblue'] . "','1','CONTRATTO','" . $now . "')";
             $conn->query($sqlInsertSMSSub);
 
             if ($conn->error) $errormsg .= "Impossibile eseguire la query: " . $sqlInsertSMSSub . " - Errore: " . $conn->error . PHP_EOL;
@@ -53,7 +54,7 @@ else {
     }
 }
 }
-$msg = "Inseriti / Aggiornati {$esiste->num_rows} numeri di telefono dal CRM a SendinBlue.";
+$msg = "Inseriti / Aggiornati numeri di telefono dal CRM a SendinBlue.";
 
 
 if ($errormsg == "") {
