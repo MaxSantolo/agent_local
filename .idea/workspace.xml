@@ -34,32 +34,6 @@
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="crm@192.168.1.10" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="crm@192.168.1.10" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="crm: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="crm@192.168.1.10" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="crm: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="views" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="crm@192.168.1.10" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="crm: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="views" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="email_lead_sendinblue: view" type="bd137a56:MysqlImplModel$View" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="pickcent_agentcrm@pickcenter.it" type="feb32156:DbDataSourceImpl" />
       </path>
     </expand>
@@ -88,10 +62,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PickLog.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PickLog.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tech/classes/PickLog.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
+            <state relative-caret-position="864">
               <caret line="52" column="87" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="87" />
             </state>
           </provider>
@@ -100,7 +74,7 @@
       <file leaf-file-name="Mail.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tech/classes/Mail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
+            <state relative-caret-position="882">
               <caret line="54" column="53" selection-start-line="54" selection-start-column="53" selection-end-line="54" selection-end-column="53" />
             </state>
           </provider>
@@ -118,17 +92,17 @@
       <file leaf-file-name="update_agent_erp_id.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/update_agent_erp_id.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1212">
-              <caret line="116" selection-start-line="116" selection-end-line="116" />
+            <state relative-caret-position="18">
+              <caret line="17" column="40" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="update_agent_erp_sms.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="update_agent_erp_sms.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/update_agent_erp_sms.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="56" column="30" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
+            <state relative-caret-position="312">
+              <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -170,10 +144,12 @@
       <find>key</find>
       <find>getmessagesent</find>
       <find>visual_phonebook</find>
+      <find>ErrorInfo</find>
     </findStrings>
     <dirStrings>
       <dir>D:\php_projects\agent_local</dir>
       <dir>U:\agent_crm</dir>
+      <dir>W:\agent_crm</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -250,7 +226,7 @@
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -293,7 +269,7 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="W:/logs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
@@ -376,14 +352,17 @@
       <workItem from="1554900361632" duration="6996000" />
       <workItem from="1554966021019" duration="19113000" />
       <workItem from="1555050821152" duration="4813000" />
+      <workItem from="1555337342692" duration="1276000" />
+      <workItem from="1555339917839" duration="629000" />
+      <workItem from="1555398517829" duration="1096000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106604000" />
+    <option name="totallyTimeSpent" value="109605000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -393,9 +372,9 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32925472" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49630412" visible="true" weight="0.19947916" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49630412" visible="true" weight="0.19947916" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.12083333" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.12083333" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5036959" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -646,7 +625,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tech/classes/Mail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
+        <state relative-caret-position="882">
           <caret line="54" column="53" selection-start-line="54" selection-start-column="53" selection-end-line="54" selection-end-column="53" />
         </state>
       </provider>
@@ -658,24 +637,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tech/classes/PickLog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="52" column="87" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/update_agent_erp_id.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1212">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
+        <state relative-caret-position="18">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/update_agent_erp_sms.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="56" column="30" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tech/classes/PickLog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="52" column="87" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="87" />
+        <state relative-caret-position="312">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
         </state>
       </provider>
     </entry>
