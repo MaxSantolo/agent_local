@@ -1,0 +1,32 @@
+ Il volume nell'unit… X Š www
+ Numero di serie del volume: F818-73BB
+
+ Directory di X:\
+
+24/05/2019  12:23    <DIR>          .
+11/04/2019  16:02    <DIR>          ..
+03/04/2019  11:38    <DIR>          APIv3-php-library-master
+03/04/2019  11:38    <DIR>          aspnet_client
+07/08/2018  08:46               202 check_base_subscriptions.php
+03/04/2019  11:38    <DIR>          css
+18/09/2018  11:31             5.331 dashboard_management.php
+24/05/2019  12:23                94 dirlist.txt
+10/10/2018  11:57             5.721 freeradius_util.php
+24/05/2019  01:51            14.626 general.log
+03/04/2019  11:38    <DIR>          images
+12/09/2018  16:25               816 index.php
+10/04/2019  12:32    <DIR>          logs
+03/04/2019  11:38    <DIR>          modules
+18/09/2018  11:31             2.753 recover_list.php
+09/08/2018  13:00               456 report_orphans.php
+11/04/2019  10:17    <DIR>          tech
+12/04/2019  08:34               115 test.php
+23/11/2018  16:31                75 test2.php
+02/11/2018  14:02               571 update_adm_contacts.php
+11/04/2019  12:42             4.049 update_agent_erp_id.php
+16/04/2019  09:16             2.738 update_agent_erp_sms.php
+11/09/2018  16:36             2.571 update_erp_mailing_reactions.php
+11/04/2019  12:57             2.907 update_erp_mailing_status.php
+03/04/2019  11:38    <DIR>          vendor
+              15 File         43.025 byte
+              10 Directory  46.297.595.904 byte disponibili

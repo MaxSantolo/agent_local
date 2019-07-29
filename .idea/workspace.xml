@@ -74,8 +74,8 @@
       <file leaf-file-name="Mail.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tech/classes/Mail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="882">
-              <caret line="54" column="53" selection-start-line="54" selection-start-column="53" selection-end-line="54" selection-end-column="53" />
+            <state relative-caret-position="684">
+              <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -92,7 +92,7 @@
       <file leaf-file-name="update_agent_erp_id.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/update_agent_erp_id.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
+            <state relative-caret-position="126">
               <caret line="17" column="40" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="40" />
             </state>
           </provider>
@@ -101,8 +101,8 @@
       <file leaf-file-name="update_agent_erp_sms.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/update_agent_erp_sms.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+            <state relative-caret-position="658">
+              <caret line="44" column="182" selection-start-line="44" selection-start-column="182" selection-end-line="44" selection-end-column="182" />
             </state>
           </provider>
         </entry>
@@ -145,6 +145,7 @@
       <find>getmessagesent</find>
       <find>visual_phonebook</find>
       <find>ErrorInfo</find>
+      <find>CELLU</find>
     </findStrings>
     <dirStrings>
       <dir>D:\php_projects\agent_local</dir>
@@ -226,9 +227,8 @@
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
-    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -238,6 +238,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -260,7 +261,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -355,29 +355,31 @@
       <workItem from="1555337342692" duration="1276000" />
       <workItem from="1555339917839" duration="629000" />
       <workItem from="1555398517829" duration="1096000" />
+      <workItem from="1555421055776" duration="573000" />
+      <workItem from="1563518173251" duration="768000" />
+      <workItem from="1563865354313" duration="575000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109605000" />
+    <option name="totallyTimeSpent" value="111521000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32899022" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32925472" />
       <window_info anchor="right" id="Remote Host" order="3" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49630412" visible="true" weight="0.19947916" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" visible="true" weight="0.12083333" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" sideWeight="0.5036959" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" sideWeight="0.5036959" side_tool="true" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -592,13 +594,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://140570fa-e22e-4aa0-a67b-f5ae4738b3cb/schema/pickcent_agentcrm/table/email_check">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://140570fa-e22e-4aa0-a67b-f5ae4738b3cb/schema/pickcent_agentcrm/table/email_check" />
     <entry file="file://$PROJECT_DIR$/tech/agent_cron_sb_1.bat">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -623,13 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tech/classes/Mail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="54" column="53" selection-start-line="54" selection-start-column="53" selection-end-line="54" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -646,15 +635,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/update_agent_erp_id.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
+        <state relative-caret-position="126">
           <caret line="17" column="40" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tech/classes/Mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/update_agent_erp_sms.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+        <state relative-caret-position="658">
+          <caret line="44" column="182" selection-start-line="44" selection-start-column="182" selection-end-line="44" selection-end-column="182" />
         </state>
       </provider>
     </entry>
